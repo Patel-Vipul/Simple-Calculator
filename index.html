@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- main Container -->
+    <main class="Calculator">
+      <div class="calculator-body">
+        <!-- output screen [disabled is used to prevent any user interation] -->
+        <input
+          type="text"
+          class="display"
+          id="dis"
+          placeholder="Calculate"
+          disabled
+          readonly
+          aria-label="Calculator display" />
+
+        <!-- button container  -->
+        <div class="buttons">
+          <!-- first line -->
+          <button id="btn-ac" class="top">AC</button>
+          <button id="btn-mod" class="top">%</button>
+          <button id="btn-del" class="top">⌫</button>
+          <button id="btn-d" class="operator">÷</button>
+
+          <!-- second line -->
+          <button id="btn-7">7</button>
+          <button id="btn-8">8</button>
+          <button id="btn-9">9</button>
+          <button id="btn-mul" class="operator">×</button>
+
+          <!-- third line -->
+          <button id="btn-4">4</button>
+          <button id="btn-5">5</button>
+          <button id="btn-6">6</button>
+          <button id="btn-min" class="operator">-</button>
+
+          <!-- forth line -->
+          <button id="btn-1">1</button>
+          <button id="btn-2">2</button>
+          <button id="btn-3">3</button>
+          <button id="btn-plus" class="operator">+</button>
+
+          <!-- fifth line -->
+          <button id="btn-0" class="zero">0</button>
+          <button id="btn-dot">.</button>
+          <button id="btn-equal" class="operator">=</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- There are Lots of Problem in This Calculate. which will be fixed eventually be  -->
